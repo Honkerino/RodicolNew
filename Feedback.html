@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body class="fedbac">
+	<form id = "feedback" onsubmit="returnPrint();">
+		<label for="name">Name</label>
+		<input type ="text" name="name" id="name"><br><br>
+		
+		<label for="section">Section:</label>
+		<input type="text" name="section" id="section"><br><br>
+		
+		<label for="feed"> Feedback </label>
+		<input type="text area" id="feed" name="feed"	rows="4" cols="50">
+		
+		 <button id="button" onclick="printInput()">Print Input</button>
+		<h2 id="output"></h2>
+	</form>
+	<p id = "a">Name: </p>
+    <p id = "b">Section:</p>
+    <p id = "c">Feedback:</p>
+		
+</body>
+<script>
+	 function printInput(){
+                var name = document.getElementById("name").value;
+                var section = document.getElementById("section").value;
+                var feed = document.getElementsByName("feed");
+	function printInput(){
+				output.innerHTML = input.value;
+}
+				document.getElementById("a").innerHTML = "Name: " + name;
+                document.getElementById("b").innerHTML = "Section: " + section;
+                document.getElementById("c").innerHTML = "Feedback: " + feed;
+</script>
